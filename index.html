@@ -6,15 +6,6 @@
 -->
 <html>
 	<head>
-
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-MN2F2LT');</script>
-		<!-- End Google Tag Manager -->
-
 		<title>home</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -23,25 +14,18 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<!-- TODO: input GA tag here -->
-		<!--
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148800232-1"></script>
 		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-148800232-1');
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-148800232-1');
 		</script>
-		-->
 
 
 	</head>
 	<body class="is-preload">
-
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MN2F2LT"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
 
 		<!-- Header -->
 			<header id="header">
@@ -81,7 +65,25 @@
 						<h2>ドライフーズの魅力</h2>
 						<p>ああああああああああああああああああああああああああああああああああああああああああああああああああああ</br></br><a href="about.html"><img src="images/a02.jpg" alt="" /></a></br></br>
 						</p>
+
+						<!-- 直接htmlによるイベントトラッキングの設定例 ココカラ-->
+
+						<a href="#" onclick="gtag('event', 'click', {'event_category': 'testcategory', 'event_label': 'clicktest'});">クリックてすと</a>
+						</br>
+
+						<a href="http://google.com/" onclick="gtag('event', 'click', {'event_category': 'externalLink','event_label': 'google'});">GOOGLEトップへ</a>
+						</br>
+
+						<a href="http://xxx/companyprofile.pdf" onclick="gtag('event', 'click', {'event_category': 'download','event_label': 'companyprofile'});">資料ダウンロードはこちら</a>
+						</br>
+
+						<a href=tel:012-3456-7890 onClick="gtag('event', 'tap', {'event_category': 'tel','event_label': 'reservation'});">電話をかける</a>
+						</br>
+						
+						<!-- 直接htmlによるイベントトラッキングの設定例 ココマデ-->
+
 					</header>
+
 
 
 				<header class="special">
